@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /index.jsp
+    destination: /home/ec2-user/tomcat/webapps/
+    
+hooks:
+  AfterInstall:
+    - location: server_start.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: server_stop.sh
+      timeout: 300
+      runas: root 
