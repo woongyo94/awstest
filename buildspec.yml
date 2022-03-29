@@ -16,7 +16,6 @@ artifacts:
     - index.jsp
     - scripts/server_start.sh
     - scripts/server_stop.sh
-    - TestXMLFile.xml
     - appspec.yml
    
   discard-paths: yes
